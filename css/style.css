@@ -1,3 +1,20 @@
-
+.page-header-hero {
+  background-image: url("https://images.unsplash.com/uploads/14108632958755ac7f7f3/fe4a5cbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=da6205867f2657d3dffe99348f89febb");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  position: relative; }
+  .page-header-hero > * {
+    position: relative;
+    z-index: 100; }
+  .page-header-hero::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */
