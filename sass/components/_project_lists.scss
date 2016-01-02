@@ -41,6 +41,12 @@
   }
 }
 
+.data-link-project {
+  &:hover {
+    color: inherit !important;
+  }
+}
+
 .data-project-thumbnail {
   border-radius: 3px;
   width: 60px;

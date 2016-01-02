@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AACA,UAMC;EALC,WAAW,EAAE,YAAY;EACzB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,6IAA6I;EAClJ,aAAa,EAAE,6HAA6H;;AAG9I,UAMC;EALC,WAAW,EAAE,YAAY;EACzB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,0IAA0I;EAC/I,aAAa,EAAE,6HAA6H",
+"sources": ["../sass/components/_fonts.scss"],
+"names": [],
+"file": "baikal.css"
+}
