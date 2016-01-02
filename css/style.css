@@ -6,7 +6,8 @@
   border-radius: 3px;
   box-sizing: border-box !important;
   border: 1px solid #ccc;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-appearance: none; }
 
 /* cyrillic-ext */
 @font-face {
