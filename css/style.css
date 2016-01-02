@@ -7,7 +7,8 @@
   box-sizing: border-box !important;
   border: 1px solid #ccc;
   margin-bottom: 20px;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  appearance: none; }
 
 /* cyrillic-ext */
 @font-face {
