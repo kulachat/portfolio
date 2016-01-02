@@ -1,0 +1,72 @@
+$color-border: #3e3f40;
+$color-gray: #b8c5c6;
+
+.header-site {
+  background-color: #222325;
+  padding-top: 1.5vmin;
+
+  .navbar-inverse {
+    background-color: #222325;
+    border: none;
+  }
+}
+
+.header-magazine {
+  border-bottom: 1px solid $color-border;
+  padding-bottom: 15px;
+
+  .btn-sm-corner {
+    color: $color-gray;
+    margin-top: 12px;
+  }
+}
+
+.site-name {
+  font-weight: 700;
+  font-size: 40px;
+  display: inline-block;
+  color: #fff;
+
+  &:hover {
+    color: $color-gray;
+    text-decoration: none;
+  }
+}
+
+.accouts-socials {
+  padding-top: 10px;
+
+  > a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $color-border;
+    border-radius: 100%;
+    margin-right: 5px;
+    vertical-align: top;
+
+    &:hover {
+      border-color: lighten($color-border, 40%);
+    }
+  }
+
+  .fa {
+    display: inline-block;
+    color: $color-gray;
+    vertical-align: -4px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+
+// Button
+.btn-sm-corner {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: 1px solid $color-border;
+  padding: 8px 20px;
+}
