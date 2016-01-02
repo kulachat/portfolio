@@ -1,5 +1,53 @@
+.main-menu {
+  background-color: rgba(0,0,0,.3);
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  z-index: 100;
+  padding: 5px 15px 0 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+[role="navigation"] {
+  float: right;
+  overflow: hidden;
+
+  ul { padding: 0; margin: 0; overflow: hidden; }
+
+  li {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    font-size: 14px;
+
+    > a {
+      color: #fff;
+      display: block;
+      line-height: 40px;
+    }
+  }
+}
+
+.logo-brand {
+  display: inline-block;
+  margin-top: 2px;
+
+  img {
+    border-radius: 100%;
+    height: 36px;
+  }
+}
+
+#subscribe {
+  border-radius: 6px;
+  border: 1px solid #fff;
+  line-height: 20px;
+  padding: 5px 10px;
+}
+
 .page-header-hero {
-  background-image: url('https://images.unsplash.com/uploads/14108632958755ac7f7f3/fe4a5cbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=da6205867f2657d3dffe99348f89febb');
+  background-image: url('../img/bg/bg-hero.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
