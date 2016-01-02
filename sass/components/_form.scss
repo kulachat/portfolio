@@ -1,3 +1,9 @@
+textarea, input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="search"] {
+  -webkit-appearance: none !important;
+}
 .search-data {
   width: 100%;
   font-size: 16px;
