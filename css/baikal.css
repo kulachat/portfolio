@@ -15,12 +15,37 @@
 .theme-magazine {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+.btn-sm-corner {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: 1px solid #3e3f40;
+  padding: 10px 20px 8px; }
+
+.label-categories {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 2px 4px 1px;
+  border: 1px solid #eee; }
+
+.date-time {
+  font-family: 'PT Serif Italic';
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 1px; }
+
 .header-site {
   background-color: #222325;
   padding-top: 1.5vmin; }
   .header-site .navbar-inverse {
     background-color: #222325;
-    border: none; }
+    border: none;
+    margin: 0; }
 
 .header-magazine {
   border-bottom: 1px solid #3e3f40;
@@ -99,13 +124,64 @@
 .wrapper-sub-menu {
   position: relative; }
 
-.btn-sm-corner {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 30px;
-  border: 1px solid #3e3f40;
-  padding: 8px 20px; }
+/* Section Hero
+   ========================================================================== */
+.hero-content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 10rem 0;
+  table-layout: fixed;
+  display: table;
+  min-height: 315px; }
+
+.hero-inner {
+  position: relative;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle; }
+
+.hero-section-content {
+  max-width: 740px;
+  margin: auto;
+  color: #fff; }
+  .hero-section-content .group-content-inline-block {
+    font-size: 12px;
+    font-weight: 100; }
+
+.hero-title-section {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 64em) {
+    .hero-title-section {
+      font-size: 52px; } }
+
+.group-content-inline-block {
+  color: #b8c5c6; }
+  .group-content-inline-block > * {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    padding-top: 10px; }
+
+.stats-content + .stats-content {
+  margin-left: 10px; }
+
+.stats-btn-shares {
+  font-family: 'PT Serif Italic';
+  text-transform: none;
+  font-size: 13px;
+  font-style: italic;
+  color: #b8c5c6;
+  border: 1px solid #b8c5c6; }
+  .stats-btn-shares:hover {
+    color: inherit; }
+  .stats-btn-shares .fa {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; }
 
 /*# sourceMappingURL=baikal.css.map */
