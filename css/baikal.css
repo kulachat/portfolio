@@ -113,7 +113,10 @@
 
 .header-magazine {
   border-bottom: 1px solid #3e3f40;
-  padding-bottom: 15px; }
+  padding-bottom: 8px; }
+  @media screen and (min-width: 64em) {
+    .header-magazine {
+      padding-bottom: 15px; } }
   .header-magazine .btn-sm-corner {
     color: #b8c5c6;
     margin-top: 12px; }
@@ -191,6 +194,7 @@
 /* Section Hero
    ========================================================================== */
 .hero-content {
+  background-color: #333;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -317,6 +321,9 @@
   vertical-align: middle;
   height: 40px;
   width: 33.33333%; }
+  .social-link:hover {
+    background-color: #3e3f40;
+    color: #fff; }
   .social-link.middle-link {
     border-left: 1px solid #eee;
     border-right: 1px solid #eee; }
@@ -325,7 +332,7 @@
   font-size: 11px;
   text-align: center;
   border-top: 1px solid #eee;
-  padding: 11px 0;
+  padding: 12px 0;
   display: block; }
 
 /*# sourceMappingURL=baikal.css.map */

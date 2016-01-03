@@ -57,7 +57,11 @@ $color-title-section: #3b3d40;
 
 .header-magazine {
   border-bottom: 1px solid $color-border;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
+
+  @media screen and (min-width: 64em) {
+    padding-bottom: 15px;
+  }
 
   .btn-sm-corner {
     color: $color-gray;
@@ -165,6 +169,7 @@ $color-title-section: #3b3d40;
 /* Section Hero
    ========================================================================== */
 .hero-content {
+  background-color: #333;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -331,6 +336,11 @@ $color-title-section: #3b3d40;
   height: 40px;
   width: 33.33333%;
 
+  &:hover {
+    background-color: $color-border;
+    color: #fff;
+  }
+
   &.middle-link {
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
@@ -341,6 +351,6 @@ $color-title-section: #3b3d40;
   font-size: 11px;
   text-align: center;
   border-top: 1px solid #eee;
-  padding: 11px 0;
+  padding: 12px 0;
   display: block;
 }
