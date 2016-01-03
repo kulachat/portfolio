@@ -1,8 +1,19 @@
 $color-border: #3e3f40;
 $color-gray: #b8c5c6;
+$body-color-content: #666d70;
+$color-title-section: #3b3d40;
 
 .theme-magazine {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.micro-section {
+  font-size: 11px !important;
+  color: $color-title-section;
+  display: block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 30px 0 20px;
 }
 
 // Button
@@ -211,6 +222,7 @@ $color-gray: #b8c5c6;
   font-family: 'PT Serif Italic';
   text-transform: none;
   font-size: 13px;
+  font-weight: 100;
   font-style: italic;
   color: $color-gray;
   border: 1px solid $color-gray;
@@ -225,4 +237,110 @@ $color-gray: #b8c5c6;
     vertical-align: middle;
     margin-left: 10px;
   }
+}
+
+.wrapper-content-article {
+  padding: 4rem 0;
+  position: relative;
+}
+
+.main-content-article {
+  color: $body-color-content;
+
+  // Type
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 22px;
+    font-weight: bold;
+    color: $color-title-section;
+    margin: 40px 0 20px;
+  }
+
+  p {
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 64em) {
+    padding-left: 400px;
+    padding-right: 16%;
+  }
+}
+
+.caption-qoute {
+  p {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
+//  Avatar
+.author-card {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+
+  @media screen and (min-width: 64em) {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  a {
+    color: #838c8d;
+  }
+}
+
+.info {
+  display: block;
+  padding: 30px 50px;
+  border-bottom: 1px solid #eee;
+
+}
+
+#name {
+  display: block;
+  padding-top: 20px;
+
+  span {
+    font-size: 11px;
+    font-weight: bold;
+    color: $color-title-section;
+    display: block;
+  }
+}
+
+.author-details {
+  font-family: 'PT Serif', serif;
+  color: #838c8d;
+  font-size: 11px;
+}
+
+.author-social-media {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+
+.social-link {
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
+  width: 33.33333%;
+
+  &.middle-link {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+  }
+}
+
+.more-post {
+  font-size: 11px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 11px 0;
+  display: block;
 }
