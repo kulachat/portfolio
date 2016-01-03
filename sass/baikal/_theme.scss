@@ -1,6 +1,10 @@
 $color-border: #3e3f40;
 $color-gray: #b8c5c6;
 
+.theme-magazine {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .header-site {
   background-color: #222325;
   padding-top: 1.5vmin;
@@ -19,13 +23,70 @@ $color-gray: #b8c5c6;
     color: $color-gray;
     margin-top: 12px;
   }
+
+}
+
+//  Override Bootstrap
+.header-sub-menu {
+  .navbar-toggle {
+    float: left;
+    display: block;
+    border-radius: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .navbar-brand {
+    padding-left: 2.5rem !important;
+    margin-left: 0 !important;
+    padding-right: 2.5rem !important;
+    border-right: 1px solid $color-border;
+  }
+
+  .navbar-nav {
+    float: none;
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      >a {
+        font-weight: bold;
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+}
+
+.toggle-search-bar {
+  position: absolute;
+  top: 0;
+  padding: 15px 2.5rem;
+  right: 0;
+  border-left: 1px solid $color-border;
+
+  &:hover {
+    background-color: #333;
+  }
+  
+  > .fa {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
 }
 
 .site-name {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 28px;
   display: inline-block;
   color: #fff;
+
+  @media screen and (min-width: 64em) {
+    font-size: 40px;
+  }
 
   &:hover {
     color: $color-gray;
@@ -59,6 +120,9 @@ $color-gray: #b8c5c6;
   }
 }
 
+.wrapper-sub-menu {
+  position: relative;
+}
 
 // Button
 .btn-sm-corner {
