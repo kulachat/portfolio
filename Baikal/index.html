@@ -79,51 +79,85 @@
 
         <div class="container">
           <div class="wrapper-content-article">
-          <div class="main-content-article">
-            <div class="caption-qoute">
-              <p>Lake Baikal is the freshwater lake with greatest volume in the world, containing roughly 20% of the world’s unfrozen surface fresh water, and at 1,642 m, the deepest. </p>
-            </div>
-            <h3>Wildlife</h3>
-            <p>
-              In total there are less than 60 native fish species in the lake, but more than half of these are endemic. The families Abyssocottidae (deep-water sculpins), Comephoridae (golomyankas or Baikal oilfish) and Cottocomephoridae (Baikal sculpins), and the subfamily Cottinae (part of the cottid family) are entirely restricted to the lake basin.
-            </p>
-            <h4 class="micro-section">INVERTEBRATES</h4>
-            <p>
-              The lake hosts rich endemic fauna of invertebrates. Epischura baikalensis is endemic to Lake Baikal and the dominating zooplankton species there, making up 80 to 90% of total biomass.
-            </p>
-          </div>
-          <div class="author-card">
-            <div class="author-block" itemscope="" itemptype="http://schema.org/Person">
-              <div class="info">
-                <span itemprop="image" class="avatar">
-                  <a href="#"><img alt="" src="imgs/avatar.png"></a>
-                </span>
-                <div>
-                  <span itemprop="name" id="name">
-                    <a href="">
-                      <span>ANNA</span>
-                      <span>OSTYANKO</span>
-                    </a>
-                  </span>
-                  <span class="author-details">Store Manager</span>
-                </div>
+            <div class="main-content-article">
+              <div class="caption-qoute">
+                <p>Lake Baikal is the freshwater lake with greatest volume in the world, containing roughly 20% of the world’s unfrozen surface fresh water, and at 1,642 m, the deepest. </p>
               </div>
-    		      <div>
-      			   <p class="author-social-media">
-                 <a class="social-link" target="_blank" rel="nofollow" href="#"><span class="fa fa-facebook"></span></a>
-                 <a class="social-link middle-link" target="_blank" rel="nofollow" href="#"><span class="fa fa-twitter"></span></a>
-                 <a class="social-link" target="_blank" rel="nofollow" href="#"><span class="fa fa-instagram"></span></a>
-               </p>
-               <div>
-                 <a class="more-post" href="#">ALL POSTS</a>
-               </div>
-        		  </div>
-	         </div>
+              <h3>Wildlife</h3>
+              <p>
+                In total there are less than 60 native fish species in the lake, but more than half of these are endemic. The families Abyssocottidae (deep-water sculpins), Comephoridae (golomyankas or Baikal oilfish) and Cottocomephoridae (Baikal sculpins), and the subfamily Cottinae (part of the cottid family) are entirely restricted to the lake basin.
+              </p>
+              <h4 class="micro-section">INVERTEBRATES</h4>
+              <p>
+                The lake hosts rich endemic fauna of invertebrates. Epischura baikalensis is endemic to Lake Baikal and the dominating zooplankton species there, making up 80 to 90% of total biomass.
+              </p>
+            </div>
+            <div class="author-card">
+              <div class="author-block" itemscope="" itemptype="http://schema.org/Person">
+                <div class="info">
+                  <span itemprop="image" class="avatar">
+                    <a href="#"><img alt="" src="imgs/avatar.png"></a>
+                  </span>
+                  <div>
+                    <span itemprop="name" id="name">
+                      <a href="">
+                        <span>ANNA</span>
+                        <span>OSTYANKO</span>
+                      </a>
+                    </span>
+                    <span class="author-details">Store Manager</span>
+                  </div>
+                </div>
+      		      <div>
+        			   <p class="author-social-media">
+                   <a class="social-link" target="_blank" rel="nofollow" href="#"><span class="fa fa-facebook"></span></a>
+                   <a class="social-link middle-link" target="_blank" rel="nofollow" href="#"><span class="fa fa-twitter"></span></a>
+                   <a class="social-link" target="_blank" rel="nofollow" href="#"><span class="fa fa-instagram"></span></a>
+                 </p>
+                 <div>
+                   <a class="more-post" href="#">ALL POSTS</a>
+                 </div>
+          		  </div>
+  	         </div>
+            </div>
+          </div>
+
+          <div class="section-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="./imgs/slider.jpg" />
+                  <div class="slider-description">
+                    <h3>Lake Baikal is in a, created by the, where the Earth’s crust pulls apart.</h3>
+                    <p>Photograph by Michael Melford, National Geographic Creative</p>
+                    <span class="fa fa-close"></span>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="./imgs/slider2.jpg" />
+                  <div class="slider-description">
+                    <h3>Lake Baikal is in a, created by the, where the Earth’s crust pulls apart.</h3>
+                    <p>Photograph by Michael Melford, National Geographic Creative</p>
+                    <span class="fa fa-close"></span>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
-      </div>
     </main>
+
     <script src="//code.jquery.com/jquery-1.11.3.min.js" syn></script>
+    <script src="js/swiper.jquery.min.js" syn></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var mySwiper = new Swiper ('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        loop: true
+      });
+      });
+    </script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
