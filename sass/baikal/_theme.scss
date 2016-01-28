@@ -206,7 +206,6 @@ $color-title-section: #3b3d40;
   @media screen and (min-width: 64em) {
     font-size: 52px;
   }
-
 }
 
 .group-content-inline-block {
@@ -298,12 +297,10 @@ $color-title-section: #3b3d40;
     color: #838c8d;
   }
 }
-
 .info {
   display: block;
   padding: 30px 50px;
   border-bottom: 1px solid #eee;
-
 }
 
 #name {
@@ -353,4 +350,75 @@ $color-title-section: #3b3d40;
   border-top: 1px solid #eee;
   padding: 12px 0;
   display: block;
+}
+
+/* Section Slider
+   ========================================================================== */
+.section-slider {
+  max-width: 980px;
+  margin: auto;
+  padding:0 0 4rem 0;
+
+  .swiper-button-prev, .swiper-button-next {
+    top: auto;
+    bottom: 60px;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  max-height: 680px;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.slider-description {
+  background-color: #fdfdfd;
+  font-family: 'PT Serif', serif;
+  width: 200px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  padding: 30px;
+
+  h3 {
+    font-family: 'PT Serif Italic';
+    font-size: 16px;
+    font-style: italic;
+    color: #6c6c70;
+    margin: 0;
+  }
+
+  p {
+    font-size: 12px;
+    color: #838d8f;
+    padding-top: 20px;
+  }
+
+  .fa-close {
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: .4;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-size: 100%;
+  width: 72px;
+  height: 72px;
+}
+
+.swiper-button-prev {
+  background-image: url(../img/LeftArrow.png);
+}
+
+.swiper-button-next {
+  background-image: url(../img/RightArrow.png);
 }
