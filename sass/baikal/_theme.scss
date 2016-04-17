@@ -1,5 +1,6 @@
 $color-border: #3e3f40;
 $color-gray: #b8c5c6;
+$color-dark: #3b3d40;
 $body-color-content: #666d70;
 $color-title-section: #3b3d40;
 
@@ -167,7 +168,7 @@ $color-title-section: #3b3d40;
 }
 
 /* Section Hero
-   ========================================================================== */
+========================================================================== */
 .hero-content {
   background-color: #333;
   background-repeat: no-repeat;
@@ -267,6 +268,18 @@ $color-title-section: #3b3d40;
     font-size: 18px;
   }
 
+  blockquote {
+    font-family: 'PT Serif', serif;
+    font-size: 32px;
+    line-height: 34px;
+    color: $color-dark;
+    margin: 5rem 0;
+    border-left: 0;
+    border-top: 1px solid $color-dark;
+    border-bottom: 1px solid $color-dark;
+    padding: 25px 0;
+  }
+
   @media screen and (min-width: 64em) {
     padding-left: 400px;
     padding-right: 16%;
@@ -352,73 +365,123 @@ $color-title-section: #3b3d40;
   display: block;
 }
 
-/* Section Slider
-   ========================================================================== */
-.section-slider {
-  max-width: 980px;
-  margin: auto;
-  padding:0 0 4rem 0;
+.tags {
+  margin: 5rem 0;
 
-  .swiper-button-prev, .swiper-button-next {
-    top: auto;
-    bottom: 60px;
+  .label-categories {
+    color: #838d8f;
+    display: inline-block;
+    margin-right: 5px;
   }
 }
 
-.swiper-container {
-  width: 100%;
-  max-height: 680px;
+
+.share-content {
+  margin: 5rem 0;
+
+  .btn-sm-corner {
+    display: block;
+    color: $color-dark;
+    border-color: #ededed;
+    vertical-align: middle;
+    transition: 300ms;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 32em) {
+      display: inline-block;
+    }
+
+    &.btn-facebook {
+      background-color: #225b99;
+      border-color: #225b99;
+      color: #fff;
+    }
+
+    &.btn-twitter {
+      background-color: #00adf2;
+      border-color: #00adf2;
+      color: #fff;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .btn-sm-corner + .btn-sm-corner {
+    @media screen and (min-width: 32em) {
+      margin-left: 15px;
+    }
+  }
+
+  .fa {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  .fa-heart {
+    color: #b8c6c7;
+  }
+
+  .counts {
+    background-color: #b8c6c7;
+    display: inline-block;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    padding: 2px 8px 1px 8px;
+    vertical-align: middle;
+  }
+
+  .node {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle;
+  }
 }
 
-.swiper-slide {
-  background-size: cover;
-  background-position: 0 50%;
-}
 
-.slider-description {
-  background-color: #fdfdfd;
-  font-family: 'PT Serif', serif;
-  width: 200px;
-  border-radius: 4px;
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  padding: 30px;
+// Section Comments
+.section-commnents {
+  background-color: #f7f7f7;
+  border-top: 1px solid lighten($color-gray, 15%);
+  padding: 5rem 0;
 
-  h3 {
-    font-family: 'PT Serif Italic';
-    font-size: 16px;
-    font-style: italic;
-    color: #6c6c70;
+  .header-comments {
+    position: relative;
+    text-align: center;
+    margin: 45px 0;
+  }
+
+  .title {
+    display: inline-block;
+    vertical-align: middle;
     margin: 0;
   }
 
-  p {
-    font-size: 12px;
+  .new-comment {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
     color: #838d8f;
-    padding-top: 20px;
-  }
-
-  .fa-close {
-    font-size: 12px;
+    line-height: 42px;
+    border: 1px solid lighten($color-gray, 15%);
+    border-radius: 100%;
+    text-align: center;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    opacity: .4;
+    right: 0;
+    top: 50%;
+    margin-top: -21px;
+
+    &:hover {
+      border-color: lighten($color-gray, 5%);
+    }
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  background-size: 100%;
-  width: 72px;
-  height: 72px;
-}
-
-.swiper-button-prev {
-  background-image: url(../img/LeftArrow.png);
-}
-
-.swiper-button-next {
-  background-image: url(../img/RightArrow.png);
+.wrapper-comment {
+  max-width: 730px;
+  border-top: 1px solid lighten($color-gray, 15%);
+  margin: auto;
+  margin-top: 4rem;
 }
