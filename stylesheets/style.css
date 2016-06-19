@@ -1,0 +1,197 @@
+/* line 1, ../sass/components/_form.scss */
+textarea, input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="search"] {
+  -webkit-appearance: none !important;
+}
+
+/* line 7, ../sass/components/_form.scss */
+.search-data {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 20px;
+  box-shadow: none;
+  border-radius: 3px;
+  box-sizing: border-box !important;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* line 1, ../sass/components/_layout.scss */
+.main-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  z-index: 100;
+  padding: 5px 15px 0 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* line 13, ../sass/components/_layout.scss */
+[role="navigation"] {
+  float: right;
+  overflow: hidden;
+}
+/* line 17, ../sass/components/_layout.scss */
+[role="navigation"] ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 19, ../sass/components/_layout.scss */
+[role="navigation"] li {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  font-size: 14px;
+}
+/* line 24, ../sass/components/_layout.scss */
+[role="navigation"] li > a {
+  color: #fff;
+  display: block;
+  line-height: 40px;
+}
+
+/* line 32, ../sass/components/_layout.scss */
+.logo-brand {
+  display: inline-block;
+  margin-top: 2px;
+}
+/* line 36, ../sass/components/_layout.scss */
+.logo-brand img {
+  border-radius: 100%;
+  height: 36px;
+}
+
+/* line 42, ../sass/components/_layout.scss */
+#subscribe {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  line-height: 20px;
+  padding: 5px 10px;
+}
+
+/* line 49, ../sass/components/_layout.scss */
+.page-header-hero {
+  background-image: url("../img/bg/bg-hero.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  position: relative;
+}
+/* line 56, ../sass/components/_layout.scss */
+.page-header-hero > * {
+  position: relative;
+  z-index: 100;
+}
+/* line 61, ../sass/components/_layout.scss */
+.page-header-hero::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 74, ../sass/components/_layout.scss */
+.main-content .title-section {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  border-bottom: solid 1px #eff0f1;
+}
+
+/* line 2, ../sass/components/_project_lists.scss */
+.table-list-content tr, .table-list-content td {
+  width: 100%;
+}
+
+/* line 7, ../sass/components/_project_lists.scss */
+.data-project-list {
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 3px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 62px;
+  padding: 15px;
+  margin: 0 -15px;
+}
+/* line 18, ../sass/components/_project_lists.scss */
+.data-project-list:hover {
+  background-color: #f2f2f2;
+}
+/* line 22, ../sass/components/_project_lists.scss */
+.data-project-list h3 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: .2px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+/* line 30, ../sass/components/_project_lists.scss */
+.data-project-list p {
+  font-size: 1rem;
+  color: #999;
+  margin: 0 0 5px 0;
+}
+/* line 36, ../sass/components/_project_lists.scss */
+.data-project-list a {
+  color: #333;
+}
+/* line 38, ../sass/components/_project_lists.scss */
+.data-project-list a:hover {
+  color: #f96277;
+}
+
+/* line 45, ../sass/components/_project_lists.scss */
+.data-link-project:hover {
+  color: inherit !important;
+}
+
+/* line 50, ../sass/components/_project_lists.scss */
+.data-project-thumbnail {
+  border-radius: 3px;
+  width: 60px;
+  height: 90px;
+  margin-right: 20px;
+}
+/* line 56, ../sass/components/_project_lists.scss */
+.data-project-thumbnail > img {
+  border-radius: 3px;
+}
+
+/* line 61, ../sass/components/_project_lists.scss */
+.project-tags {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f96277;
+}

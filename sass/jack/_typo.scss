@@ -1,0 +1,9 @@
+.title-page {
+  @include typo-title;
+}
+
+.title {
+  @include typo-title;
+  color: #fff;
+  margin: 0;
+}
