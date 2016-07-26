@@ -2,6 +2,7 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link type="text/css" rel="stylesheet" href="simple.css" />
 <title>Iframe</title>
 <style>
 
@@ -19,7 +20,23 @@
     max-width: 100%;
     height: 100%;
 	}
+
+	#iframe-dtac .wrapper-inner {
+		padding-top: 0 !important;
+	}
 </style>
 <div class="show-ad">
-<iframe src="http://www.dtac.co.th/camp/specialoffer/mnp-free-device-lite.html" height="515" frameborder="0"></iframe>
+<iframe src="http://www.dtac.co.th/camp/specialoffer/mnp-free-device-lite.html" height="515" frameborder="0" border="0" cellspacing="0" id="iframe-dtac" name='iframe-dtac'></iframe>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	var iframeWindow = document.getElementById("iframe-dtac").contentWindow;
+	document.domain = "www.dtac.co.th"
+
+	$('iframe').load( function() {
+    $('iframe').contents().find("head")
+      .append($("<style type='text/css'>  #dtac-header {display:none;}  </style>"));
+	});
+});
+</script>
 </div>
