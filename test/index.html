@@ -1,42 +1,27 @@
+
 <!doctype html>
 <html>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<link type="text/css" rel="stylesheet" href="simple.css" />
 <title>Iframe</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=0">
 <style>
 
 .show-ad {
 	position: relative;
-	padding-bottom: 200%;
-    overflow: hidden;
+	max-width: 380px;
+	margin: 0 auto;
+	height: 100vh;
 }
 
 .show-ad iframe {
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-	}
-
-	#iframe-dtac .wrapper-inner {
-		padding-top: 0 !important;
-	}
+	margin: 0 auto;
+	border: 0;
+	height: 100%;
+	width: 100%;
+ }
 </style>
+<body id="frame">
 <div class="show-ad">
-<iframe src="http://www.dtac.co.th/camp/specialoffer/mnp-free-device-lite.html" height="515" frameborder="0" border="0" cellspacing="0" id="iframe-dtac" name='iframe-dtac'></iframe>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-	var iframeWindow = document.getElementById("iframe-dtac").contentWindow;
-	document.domain = "www.dtac.co.th"
-
-	$('iframe').load( function() {
-    $('iframe').contents().find("head")
-      .append($("<style type='text/css'>  #dtac-header {display:none;}  </style>"));
-	});
-});
-</script>
+<iframe src="http://www.dtac.co.th/camp/specialoffer/mnp-free-device-lite.html" width="320" scrolling="no" frameborder="0"></iframe>
 </div>
+</body>
