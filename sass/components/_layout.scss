@@ -159,6 +159,7 @@ header {
     max-width: 150px;
   }
 }
+
 // ------------------------------------------------------------- Section Project
 .project {
   margin: 0 -2.5%;
@@ -261,6 +262,7 @@ a:hover .info-contain {
 
   .title {
     font-size: $font-size-title;
+    line-height: 64px;
   }
 }
 

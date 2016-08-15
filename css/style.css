@@ -561,7 +561,8 @@ a:hover .info-contain {
     -ms-flex-preferred-size: 25%;
     flex-basis: 40%; }
   .personal .title {
-    font-size: 72px; }
+    font-size: 72px;
+    line-height: 64px; }
 
 .contact {
   background: #FF5C59;
