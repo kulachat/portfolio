@@ -413,7 +413,7 @@ header {
   font-family: "Anton", sans-serif;
   color: #2e3c40;
   margin-top: 0;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
   font-weight: 300;
   text-transform: uppercase; }
 
@@ -549,7 +549,8 @@ a:hover .info-contain {
   margin: auto;
   overflow: hidden;
   margin-top: 5rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  min-height: 640px; }
   .personal .personal-images {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
