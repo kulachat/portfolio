@@ -360,7 +360,7 @@ th {
 body {
   font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 18px;
-  color: #888;
+  color: #555;
   font-weight: 300;
   padding: 20px; }
 
@@ -368,10 +368,13 @@ img {
   max-width: 100%;
   vertical-align: middle; }
 
+h1 {
+  font-size: 56px; }
+
 a,
 a:hover {
   text-decoration: none;
-  color: #333; }
+  color: #222; }
 
 .main {
   max-width: 1810px;
@@ -385,7 +388,7 @@ header {
 .title,
 [class*="title"] {
   font-family: "Noto Sans", sans-serif;
-  color: #333;
+  color: #222;
   margin-top: 0; }
 
 .project {
@@ -436,7 +439,7 @@ header {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%; }
   .personal .title {
-    font-size: 32px;
+    font-size: 56px;
     letter-spacing: 2px; }
 
 footer {
