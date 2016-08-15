@@ -1,4 +1,8 @@
 *,*::before,*:after { box-sizing: border-box; -moz-box-sizing: border-box; }
+.hide {
+  display: none;
+}
+
 body {
   font-family: $font-family;
   font-size: $font-size-content;
@@ -14,7 +18,10 @@ img {
 
 h1 {
   font-size: $font-size-title;
+  max-width: 540px;
+  line-height: 64px;
 }
+
 a,
 a:hover {
   text-decoration: none;

@@ -357,10 +357,13 @@ th {
   box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
+.hide {
+  display: none; }
+
 body {
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  color: #555;
+  color: #545959;
   font-weight: 300;
   padding: 20px; }
 
@@ -369,12 +372,14 @@ img {
   vertical-align: middle; }
 
 h1 {
-  font-size: 56px; }
+  font-size: 56px;
+  max-width: 540px;
+  line-height: 64px; }
 
 a,
 a:hover {
   text-decoration: none;
-  color: #222; }
+  color: #212121; }
 
 .main {
   max-width: 1810px;
@@ -388,7 +393,7 @@ header {
 .title,
 [class*="title"] {
   font-family: "Noto Sans", sans-serif;
-  color: #222;
+  color: #212121;
   margin-top: 0; }
 
 .project {
