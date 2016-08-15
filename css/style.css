@@ -404,6 +404,9 @@ header {
   padding: 0 2.5% 2.5%;
   width: 50%;
   float: left; }
+  .item-project > a {
+    display: block;
+    position: relative; }
   .item-project .title {
     font-size: 18px;
     margin-bottom: 0; }
@@ -412,6 +415,32 @@ header {
     font-size: 16px; }
   .item-project p {
     margin: 0; }
+
+.info-contain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 100%;
+  transition: opacity .3s ease;
+  opacity: 0;
+  text-transform: uppercase; }
+
+.client {
+  font-size: 80%;
+  letter-spacing: 2px; }
+
+a:hover .info-contain {
+  opacity: 1; }
+
+.project-info {
+  background-color: #fff;
+  width: 100%;
+  padding: 1em 1em .5em 1em; }
+  .project-info h3 {
+    font-size: 56px;
+    line-height: 40px;
+    margin: .4em 0; }
 
 .personal {
   display: -webkit-flex;

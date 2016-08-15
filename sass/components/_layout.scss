@@ -58,6 +58,11 @@ header {
   width: 50%;
   float: left;
 
+  > a {
+    display: block;
+    position: relative;
+  }
+
   .title {
     font-size: $font-size-content;
     margin-bottom: 0;
@@ -70,6 +75,38 @@ header {
 
   p {
     margin: 0;
+  }
+}
+
+.info-contain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 100%;
+  transition: opacity .3s ease;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.client {
+  font-size: 80%;
+  letter-spacing: 2px;
+}
+
+a:hover .info-contain {
+  opacity: 1;
+}
+
+.project-info {
+  background-color: #fff;
+  width: 100%;
+  padding: 1em 1em .5em 1em;
+
+  h3 {
+    font-size: $font-size-title;
+    line-height: 40px;
+    margin: .4em 0;
   }
 }
 
