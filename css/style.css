@@ -551,11 +551,15 @@ a:hover .info-contain {
   margin-top: 5rem;
   margin-bottom: 5rem;
   min-height: 640px; }
-  .personal .personal-images {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    margin-right: -16%; }
+  @media only screen and (min-width: 1600px) {
+    .personal .personal-images {
+      background-image: url("../img/pic-info.png");
+      background-size: cover;
+      padding: 15%;
+      -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      margin-right: -16%; } }
   .personal .info {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;

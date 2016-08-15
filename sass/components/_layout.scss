@@ -248,10 +248,15 @@ a:hover .info-contain {
   min-height: 640px;
 
   .personal-images {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    margin-right: -16%;
+    @include media(largescreen) {
+      background-image: url('../img/pic-info.png');
+      background-size: cover;
+      padding: 15%;
+      -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      margin-right: -16%;
+    }
   }
 
   .info {
