@@ -562,7 +562,8 @@ a:hover .info-contain {
   text-transform: uppercase;
   padding: 1rem 2rem;
   margin-top: 1rem;
-  display: inline-block; }
+  display: inline-block;
+  letter-spacing: 3px; }
   .contact:hover {
     background-color: #2e3c40;
     color: #fff; }
