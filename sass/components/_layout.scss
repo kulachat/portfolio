@@ -8,6 +8,7 @@ body {
   font-size: $font-size-content;
   color: $font-color-content;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 img {
@@ -16,11 +17,15 @@ img {
 }
 
 h1 {
-  font-size: $font-size-title;
-  line-height: 64px;
+  font-size: 2.5rem;
   letter-spacing: 3px;
   font-weight: 300;
   text-transform: uppercase;
+
+  @include media(largescreen) {
+    line-height: 64px;
+    font-size: $font-size-title;
+  }
 }
 
 a,
@@ -35,12 +40,19 @@ p {
 }
 
 .main {
-  max-width: 1284px;
   margin: auto;
+  padding: 2rem;
+  max-width: 1204px;
+
+  @include media(largescreen) {
+    max-width: 1284px;
+    padding: 0;
+  }
 }
 
 header {
   padding: 5rem 0;
+
   p {
     max-width: 940px;
     margin-bottom: 0;
@@ -59,12 +71,17 @@ header {
 
 .cover-project {
   background-color: $font-color-body;
-  padding: 10rem 0;
   background-image: url('../img/cover.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
+  padding: 5rem 0;
+
+  @include media(desktop) {
+    padding: 10rem 0;
+    margin-bottom: 6rem;
+  }
 
   .main {
     position: relative;
@@ -92,13 +109,23 @@ header {
 
 // ------------------------------------------------------------- customers
 .trusted {
-  padding-top: 3rem;
+  @include media(largescreen) {
+    padding-top: 3rem;
+  }
+
   .heading {
     padding-bottom: 5rem;
   }
 
   .title {
-    font-size: 38px;
+    font-size: 2rem;
+    @include media(largescreen) {
+      font-size: 38px;
+    }
+  }
+
+  .info {
+    max-width: 915px;
   }
 }
 
@@ -115,11 +142,11 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 80%;
+  max-width: 1204px;
   margin-right: auto;
   margin-left: auto;
 
-  @include media(desktop) {
+  @include media(largescreen) {
     max-width: 1284px;
   }
 
@@ -138,9 +165,16 @@ header {
     }
   }
 
-  .logo-image {
-    display: block;
+}
+
+.logo-image {
+  display: block;
+  max-width: 80px;
+  margin: auto;
+
+  @include media(desktop) {
     max-width: 150px;
+    margin: 0;
   }
 }
 
@@ -211,25 +245,29 @@ a:hover .info-contain {
 
 // -----------------------------------------------------------  Section personal
 .personal {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: $bg-gray;
-  max-width: 2268px;
+  max-width: 100%;
   margin: auto;
-  overflow: hidden;
   margin-top: 5rem;
-  margin-bottom: 5rem;
-  min-height: 640px;
+  padding: 1rem;
+
+  @include media(largescreen) {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 2268px;
+    overflow: hidden;
+    padding: 0;
+  }
 
   .personal-images {
     @include media(largescreen) {
@@ -244,14 +282,25 @@ a:hover .info-contain {
   }
 
   .info {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 40%;
+    padding: 1rem;
+    text-align: center;
+
+    @include media(largescreen) {
+      -webkit-flex-basis: 40%;
+      -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+      text-align: left;
+      padding: 0;
+    }
   }
 
   .title {
-    font-size: $font-size-title;
-    line-height: 64px;
+    font-size: 2rem;
+
+    @include media(largescreen) {
+      font-size: $font-size-title;
+      line-height: 64px;
+    }
   }
 }
 

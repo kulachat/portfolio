@@ -364,18 +364,22 @@ body {
   font-family: "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   color: #2e3c40;
-  font-weight: 300; }
+  font-weight: 300;
+  overflow-x: hidden; }
 
 img {
   max-width: 100%;
   vertical-align: middle; }
 
 h1 {
-  font-size: 72px;
-  line-height: 64px;
+  font-size: 2.5rem;
   letter-spacing: 3px;
   font-weight: 300;
   text-transform: uppercase; }
+  @media only screen and (min-width: 1600px) {
+    h1 {
+      line-height: 64px;
+      font-size: 72px; } }
 
 a,
 a:hover {
@@ -387,8 +391,13 @@ p {
   line-height: 1.7; }
 
 .main {
-  max-width: 1284px;
-  margin: auto; }
+  margin: auto;
+  padding: 2rem;
+  max-width: 1204px; }
+  @media only screen and (min-width: 1600px) {
+    .main {
+      max-width: 1284px;
+      padding: 0; } }
 
 header {
   padding: 5rem 0; }
@@ -407,12 +416,16 @@ header {
 
 .cover-project {
   background-color: #2e3c40;
-  padding: 10rem 0;
   background-image: url("../img/cover.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 6rem; }
+  margin-bottom: 3rem;
+  padding: 5rem 0; }
+  @media only screen and (min-width: 1200px) {
+    .cover-project {
+      padding: 10rem 0;
+      margin-bottom: 6rem; } }
   .cover-project .main {
     position: relative; }
   .cover-project .project {
@@ -429,12 +442,18 @@ header {
     color: #fff;
     margin: 0; }
 
-.trusted {
-  padding-top: 3rem; }
-  .trusted .heading {
-    padding-bottom: 5rem; }
-  .trusted .title {
-    font-size: 38px; }
+@media only screen and (min-width: 1600px) {
+  .trusted {
+    padding-top: 3rem; } }
+.trusted .heading {
+  padding-bottom: 5rem; }
+.trusted .title {
+  font-size: 2rem; }
+  @media only screen and (min-width: 1600px) {
+    .trusted .title {
+      font-size: 38px; } }
+.trusted .info {
+  max-width: 915px; }
 
 .customers {
   display: -webkit-flex;
@@ -449,10 +468,10 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 80%;
+  max-width: 1204px;
   margin-right: auto;
   margin-left: auto; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1600px) {
     .customers {
       max-width: 1284px; } }
   .customers .customer-logo {
@@ -467,9 +486,15 @@ header {
         -ms-flex-preferred-size: 21%;
         flex-basis: 21%;
         margin-bottom: 80px; } }
-  .customers .logo-image {
-    display: block;
-    max-width: 150px; }
+
+.logo-image {
+  display: block;
+  max-width: 80px;
+  margin: auto; }
+  @media only screen and (min-width: 1200px) {
+    .logo-image {
+      max-width: 150px;
+      margin: 0; } }
 
 .project {
   margin: 0 -2.5%;
@@ -520,25 +545,28 @@ a:hover .info-contain {
     margin: .4em 0; }
 
 .personal {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: #fafafa;
-  max-width: 2268px;
+  max-width: 100%;
   margin: auto;
-  overflow: hidden;
   margin-top: 5rem;
-  margin-bottom: 5rem;
-  min-height: 640px; }
+  padding: 1rem; }
+  @media only screen and (min-width: 1600px) {
+    .personal {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      max-width: 2268px;
+      overflow: hidden;
+      padding: 0; } }
   @media only screen and (min-width: 1600px) {
     .personal .personal-images {
       background-image: url("../img/pic-info.png");
@@ -549,12 +577,21 @@ a:hover .info-contain {
       flex-basis: 50%;
       margin-right: -16%; } }
   .personal .info {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 40%; }
+    padding: 1rem;
+    text-align: center; }
+    @media only screen and (min-width: 1600px) {
+      .personal .info {
+        -webkit-flex-basis: 40%;
+        -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+        text-align: left;
+        padding: 0; } }
   .personal .title {
-    font-size: 72px;
-    line-height: 64px; }
+    font-size: 2rem; }
+    @media only screen and (min-width: 1600px) {
+      .personal .title {
+        font-size: 72px;
+        line-height: 64px; } }
 
 .contact {
   background: #FF5C59;
