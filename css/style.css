@@ -399,11 +399,12 @@ p {
       max-width: 1284px;
       padding: 0; } }
 
-header {
-  padding: 5rem 0; }
-  header p {
-    max-width: 940px;
-    margin-bottom: 0; }
+@media only screen and (min-width: 1600px) {
+  header {
+    padding: 5rem 0; } }
+header p {
+  max-width: 940px;
+  margin-bottom: 0; }
 
 .title,
 [class*="title"] {

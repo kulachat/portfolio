@@ -51,7 +51,10 @@ p {
 }
 
 header {
-  padding: 5rem 0;
+
+  @include media(largescreen) {
+    padding: 5rem 0;
+  }
 
   p {
     max-width: 940px;
