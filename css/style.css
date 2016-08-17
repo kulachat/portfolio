@@ -492,6 +492,8 @@ header p {
   display: block;
   max-width: 80px;
   margin: auto; }
+  .logo-image.fix-logo {
+    max-width: 72px; }
   @media only screen and (min-width: 1200px) {
     .logo-image {
       max-width: 150px;
@@ -565,7 +567,6 @@ a:hover .info-contain {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      max-width: 2268px;
       overflow: hidden;
       padding: 0; } }
   @media only screen and (min-width: 1600px) {
@@ -586,7 +587,12 @@ a:hover .info-contain {
         -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
         text-align: left;
-        padding: 0; } }
+        padding: 0;
+        position: relative;
+        left: 3%; } }
+    @media only screen and (min-width: 1928px) {
+      .personal .info {
+        left: 18%; } }
   .personal .title {
     font-size: 2rem; }
     @media only screen and (min-width: 1600px) {

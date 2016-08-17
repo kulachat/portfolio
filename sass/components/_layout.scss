@@ -175,6 +175,10 @@ header {
   max-width: 80px;
   margin: auto;
 
+  &.fix-logo {
+    max-width: 72px;
+  }
+
   @include media(desktop) {
     max-width: 150px;
     margin: 0;
@@ -267,7 +271,7 @@ a:hover .info-contain {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    max-width: 2268px;
+    // max-width: 2268px;
     overflow: hidden;
     padding: 0;
   }
@@ -294,6 +298,12 @@ a:hover .info-contain {
       flex-basis: 40%;
       text-align: left;
       padding: 0;
+      position: relative;
+      left: 3%;
+    }
+
+    @include media(extrascreen) {
+      left: 18%;
     }
   }
 
