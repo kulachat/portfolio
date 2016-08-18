@@ -42,23 +42,25 @@ p {
 .main {
   margin: auto;
   padding: 2rem;
-  max-width: 1204px;
+  max-width: 1404px;
 
   @include media(largescreen) {
-    max-width: 1284px;
+    text-align: center;
     padding: 0;
   }
 }
 
 header {
-
   @include media(largescreen) {
     padding: 5rem 0;
   }
 
   p {
-    max-width: 940px;
-    margin-bottom: 0;
+    margin: 1rem auto;
+    @include media(largescreen) {
+      max-width: 950px;
+      text-align: left;
+    }
   }
 }
 
@@ -118,6 +120,10 @@ header {
 
   .heading {
     padding-bottom: 5rem;
+    @include media(largescreen) {
+      max-width: 915px;
+      text-align: center;
+    }
   }
 
   .title {
@@ -128,7 +134,6 @@ header {
   }
 
   .info {
-    max-width: 915px;
   }
 }
 
@@ -145,12 +150,12 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 1204px;
+  max-width: 1404px;
   margin-right: auto;
   margin-left: auto;
 
   @include media(largescreen) {
-    max-width: 1284px;
+    max-width: 940px;
   }
 
   .customer-logo {
@@ -182,6 +187,10 @@ header {
   @include media(desktop) {
     max-width: 150px;
     margin: 0;
+  }
+
+  @include media(largescreen) {
+    margin: auto;
   }
 }
 

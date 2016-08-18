@@ -393,18 +393,21 @@ p {
 .main {
   margin: auto;
   padding: 2rem;
-  max-width: 1204px; }
+  max-width: 1404px; }
   @media only screen and (min-width: 1600px) {
     .main {
-      max-width: 1284px;
+      text-align: center;
       padding: 0; } }
 
 @media only screen and (min-width: 1600px) {
   header {
     padding: 5rem 0; } }
 header p {
-  max-width: 940px;
-  margin-bottom: 0; }
+  margin: 1rem auto; }
+  @media only screen and (min-width: 1600px) {
+    header p {
+      max-width: 950px;
+      text-align: left; } }
 
 .title,
 [class*="title"] {
@@ -448,13 +451,15 @@ header p {
     padding-top: 3rem; } }
 .trusted .heading {
   padding-bottom: 5rem; }
+  @media only screen and (min-width: 1600px) {
+    .trusted .heading {
+      max-width: 915px;
+      text-align: center; } }
 .trusted .title {
   font-size: 2rem; }
   @media only screen and (min-width: 1600px) {
     .trusted .title {
       font-size: 38px; } }
-.trusted .info {
-  max-width: 915px; }
 
 .customers {
   display: -webkit-flex;
@@ -469,12 +474,12 @@ header p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 1204px;
+  max-width: 1404px;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (min-width: 1600px) {
     .customers {
-      max-width: 1284px; } }
+      max-width: 940px; } }
   .customers .customer-logo {
     -webkit-flex: 0 0 40%;
     -ms-flex: 0 0 40%;
@@ -498,6 +503,9 @@ header p {
     .logo-image {
       max-width: 150px;
       margin: 0; } }
+  @media only screen and (min-width: 1600px) {
+    .logo-image {
+      margin: auto; } }
 
 .project {
   margin: 0 -2.5%;
