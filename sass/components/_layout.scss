@@ -22,7 +22,7 @@ h1 {
   font-weight: 300;
   text-transform: uppercase;
 
-  @include media(largescreen) {
+  @include media(desktop) {
     line-height: 64px;
     font-size: $font-size-title;
   }
