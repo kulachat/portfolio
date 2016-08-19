@@ -396,7 +396,7 @@ p {
   max-width: 950px; }
   @media only screen and (min-width: 1600px) {
     .main {
-      max-width: 1200px; } }
+      max-width: 950px; } }
 
 @media only screen and (min-width: 1200px) {
   header {
@@ -425,8 +425,7 @@ header p {
   background-size: cover;
   background-position: center;
   margin-bottom: 3rem;
-  padding: 5rem 0;
-  text-align: center; }
+  padding: 5rem 0; }
   @media only screen and (min-width: 1200px) {
     .cover-project {
       padding: 10rem 0;
@@ -489,7 +488,7 @@ header p {
   margin-left: auto; }
   @media only screen and (min-width: 1600px) {
     .customers {
-      max-width: 1200px; } }
+      max-width: 950px; } }
   .customers .customer-logo {
     -webkit-flex: 0 0 40%;
     -ms-flex: 0 0 40%;
@@ -611,7 +610,7 @@ a:hover .info-contain {
         left: 3%; } }
     @media only screen and (min-width: 1928px) {
       .personal .info {
-        left: 8%; } }
+        left: 18%; } }
   .personal .title {
     font-size: 2rem; }
     @media only screen and (min-width: 1600px) {
