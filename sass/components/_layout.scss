@@ -131,7 +131,6 @@ header {
     padding-bottom: 5rem;
     @include media(desktop) {
       max-width: 915px;
-      text-align: center;
     }
   }
 
@@ -142,10 +141,8 @@ header {
     }
   }
 
-  .info {
+  p {
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -293,7 +290,6 @@ a:hover .info-contain {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    // max-width: 2268px;
     overflow: hidden;
     padding: 0;
   }
@@ -312,7 +308,8 @@ a:hover .info-contain {
 
   .info {
     padding: 1rem;
-    text-align: center;
+    max-width: 915px;
+    margin: auto;
 
     @include media(largescreen) {
       -webkit-flex-basis: 40%;
