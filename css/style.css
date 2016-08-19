@@ -446,6 +446,15 @@ header p {
     color: #fff;
     margin: 0; }
 
+.mywork {
+  padding-left: 1rem;
+  border-left: 5px solid #FF5C59; }
+  .mywork > a {
+    color: #FF5C59;
+    text-decoration: underline; }
+    .mywork > a:hover {
+      color: #2e3c40; }
+
 @media only screen and (min-width: 1600px) {
   .trusted {
     padding-top: 3rem; } }

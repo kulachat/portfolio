@@ -112,6 +112,19 @@ header {
   }
 }
 
+.mywork {
+  padding-left: 1rem;
+  border-left: 5px solid $action;
+  > a {
+    color: $action;
+    text-decoration: underline;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+}
+
 // ------------------------------------------------------------- customers
 .trusted {
   @include media(largescreen) {
@@ -131,9 +144,6 @@ header {
     @include media(largescreen) {
       font-size: 38px;
     }
-  }
-
-  .info {
   }
 }
 
