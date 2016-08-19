@@ -42,11 +42,9 @@ p {
 .main {
   margin: auto;
   padding: 1rem;
-  max-width: $rwd-size;
-
+  max-width: $rwd-size-desktop;
   @include media(largescreen) {
-    text-align: center;
-    padding: 0;
+    max-width: $rwd-size;
   }
 }
 
@@ -60,6 +58,7 @@ header {
     @include media(largescreen) {
       max-width: 950px;
       text-align: left;
+      margin: 1rem 0;
     }
   }
 }
@@ -86,10 +85,6 @@ header {
   @include media(desktop) {
     padding: 10rem 0;
     margin-bottom: 6rem;
-  }
-
-  .main {
-    position: relative;
   }
 
   .project {
@@ -160,13 +155,13 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: $rwd-size;
+  max-width: $rwd-size-desktop;
   padding: 1rem;
   margin-right: auto;
   margin-left: auto;
 
   @include media(largescreen) {
-    max-width: 940px;
+    max-width: $rwd-size;
   }
 
   .customer-logo {
