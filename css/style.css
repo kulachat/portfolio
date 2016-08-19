@@ -425,7 +425,8 @@ header p {
   background-size: cover;
   background-position: center;
   margin-bottom: 3rem;
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  text-align: center; }
   @media only screen and (min-width: 1200px) {
     .cover-project {
       padding: 10rem 0;
@@ -467,6 +468,10 @@ header p {
   @media only screen and (min-width: 1600px) {
     .trusted .title {
       font-size: 38px; } }
+.trusted .info {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .customers {
   display: -webkit-flex;
