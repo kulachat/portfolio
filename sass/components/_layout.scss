@@ -51,7 +51,7 @@ p {
 }
 
 header {
-  @include media(largescreen) {
+  @include media(desktop) {
     padding: 5rem 0;
   }
 
