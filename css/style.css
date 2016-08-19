@@ -393,7 +393,7 @@ p {
 .main {
   margin: auto;
   padding: 2rem;
-  max-width: 1404px; }
+  max-width: 1200px; }
   @media only screen and (min-width: 1600px) {
     .main {
       text-align: center;
@@ -483,7 +483,8 @@ header p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 1404px;
+  max-width: 1200px;
+  padding: 2rem;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (min-width: 1600px) {
