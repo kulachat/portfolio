@@ -498,9 +498,9 @@ header p {
     @media only screen and (min-width: 1200px) {
       .customers .customer-logo {
         transition: opacity 0.5s cubic-bezier(0.694, 0.0482, 0.335, 1);
-        -webkit-flex-basis: 21%;
-        -ms-flex-preferred-size: 21%;
-        flex-basis: 21%;
+        -webkit-flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
         margin-bottom: 80px; } }
 
 .logo-image {

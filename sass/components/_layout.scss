@@ -176,9 +176,9 @@ header {
 
     @include media(desktop) {
       transition: opacity .5s cubic-bezier(.694,.0482,.335,1);
-      -webkit-flex-basis: 21%;
-      -ms-flex-preferred-size: 21%;
-      flex-basis: 21%;
+      -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
       margin-bottom: 80px;
     }
   }
