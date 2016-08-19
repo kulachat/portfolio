@@ -41,7 +41,7 @@ p {
 
 .main {
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   max-width: $rwd-size;
 
   @include media(largescreen) {
@@ -161,7 +161,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   max-width: $rwd-size;
-  padding: 2rem;
+  padding: 1rem;
   margin-right: auto;
   margin-left: auto;
 
