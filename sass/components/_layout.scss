@@ -129,7 +129,7 @@ header {
 
   .heading {
     padding-bottom: 5rem;
-    @include media(largescreen) {
+    @include media(desktop) {
       max-width: 915px;
       text-align: center;
     }
@@ -137,7 +137,7 @@ header {
 
   .title {
     font-size: 2rem;
-    @include media(largescreen) {
+    @include media(desktop) {
       font-size: 38px;
     }
   }

@@ -459,13 +459,13 @@ header p {
     padding-top: 3rem; } }
 .trusted .heading {
   padding-bottom: 5rem; }
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1200px) {
     .trusted .heading {
       max-width: 915px;
       text-align: center; } }
 .trusted .title {
   font-size: 2rem; }
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1200px) {
     .trusted .title {
       font-size: 38px; } }
 .trusted .info {
